@@ -42,7 +42,7 @@ app.post('/api/users/register', (req, res) => {
     })
 })
 
-app.post('/api/users/login', (req, res) => {
+app.post('/api/user/login', (req, res) => {
     User.findOne({email: req.body.email}, (err, user) => {
         console.log(err)
         if(!user){
